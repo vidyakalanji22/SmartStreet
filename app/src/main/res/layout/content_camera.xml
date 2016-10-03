@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="msd.com.smartstreet.CameraActivity"
+    tools:showIn="@layout/activity_camera">
+
+    <!-- VideoView for displayin the captured video -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="#00F0F8FF"
+        />
+    <!-- imageView for displaying the captured photo -->
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/hammert" />
+
+    <!-- Linear Layout to hold four buttons horizontally -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- View Gallery button-->
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="Gallery"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <!-- Photo Button-->
+        <Button
+            android:id="@+id/snap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttongreen"
+            android:text="Photos"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <!-- Audio Button-->
+        <Button
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="Audio"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <!-- Video Button-->
+        <Button
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttongreen"
+            android:text="Video"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:padding="4dp">
+
+    <!-- ImageView for the comment image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv"
+        android:src="@drawable/ic_rating"
+        android:background="#00F0F8FF"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView for the Comment Text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awesome!!"
+        android:textSize="20dp"
+        android:id="@+id/tvComment"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#EA5E3E"
+        />
+
+    <!-- TextView for displaying user name-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niranjan"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:id="@+id/tvUser"
+        android:layout_below="@id/tvComment"
+        android:layout_toRightOf="@+id/iv"/>
+
+    <!-- TextView for displaying time stamp-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:id="@+id/tvDate"
+        android:layout_below="@id/tvUser"
+        android:layout_toRightOf="@+id/iv"/>
+
+    <!-- RatinBar for displaying rating-->
+    <RatingBar
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_toRightOf="@+id/iv"
+        android:paddingLeft="20dp"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="5"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+
+</RelativeLayout>

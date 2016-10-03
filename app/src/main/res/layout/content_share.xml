@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share"
+    android:background="#EEEEEE">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:text="Email"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/button"
+        android:id="@+id/email"
+        android:drawableLeft="@drawable/whitemail"
+        android:layout_marginTop="70dp"
+        android:drawablePadding="-200dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:text="Facebook"
+        android:drawableLeft="@drawable/facebook"
+        android:id="@+id/fb"
+        android:background="@drawable/buttongreen"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="-170dp"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:text="Audio"
+        android:drawableLeft="@drawable/audioicon"
+        android:id="@+id/audio"
+        android:background="@drawable/button"
+        android:layout_below="@+id/fb"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:drawablePadding="-180dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:text="Shared Details"
+        android:drawableLeft="@drawable/sharedet"
+        android:id="@+id/viewGallery"
+        android:background="@drawable/buttongreen"
+        android:layout_below="@+id/audio"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:drawablePadding="-120dp"
+        android:textColor="#FFFFFF"/>
+
+
+
+</RelativeLayout>

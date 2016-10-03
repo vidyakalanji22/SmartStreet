@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="msd.com.smartstreet.InteractActivity"
+    android:background="#EEEEEE">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <Switch
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light On/Off"
+        android:textSize="20dp"
+        android:id="@+id/light"
+        android:layout_marginTop="70dp"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change color"
+        android:layout_below="@+id/light"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:id="@+id/color"
+        android:textColor="#000000"/>
+
+    <SeekBar
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/seekBarRed"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/color"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:background="#FF0000"
+        />
+
+    <SeekBar
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/seekBarGreen"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seekBarRed"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:background="#458B00"
+        />
+    <SeekBar
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/seekBarBlue"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seekBarGreen"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:background="#0000CD"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/seekBarBlue"
+    android:id="@+id/buttonLayout"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:id="@+id/red_value"/>
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textSize="20dp"
+        android:textColor="#458B00"
+        android:id="@+id/green_value"
+        />
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textSize="20dp"
+        android:textColor="#0000CD"
+        android:id="@+id/blue_value"/>
+</LinearLayout>
+
+    <!--<TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brightness"
+        android:layout_below="@+id/buttonLayout"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:id="@+id/textbBright"
+        android:textColor="#000000"
+        />
+
+    <SeekBar
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarIntensity"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textbBright"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        />-->
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Music"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttongreen"
+        android:layout_below="@+id/buttonLayout"
+        android:textColor="#FFFFFF"
+        android:id="@+id/musicButton"/>
+
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interaction Records"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/musicButton"
+        android:textColor="#FFFFFF"
+        android:id="@+id/interactRecords"/>
+
+
+</RelativeLayout>

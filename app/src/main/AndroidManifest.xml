@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="msd.com.smartstreet">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- Permission for reading and writing to SD card -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".SmartStreetApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomePageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".BarcodeActivity"
+            android:label="@string/title_activity_barcode"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePageActivity" />
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AudioActivity"
+            android:label="@string/title_activity_audio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShareActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_activity_share"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Facebook app ID for using facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider627465390744938"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommentsActivity"
+            android:label="@string/title_activity_comments"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+       <!-- <provider
+            android:name=".UsersProvider"
+            android:authorities="msd.com.smartstreet.usersprovider"
+            android:exported="false" />-->
+
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SharedRecords"
+            android:label="Shared Records"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:label="@string/title_activity_create_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InteractActivity"
+            android:label="Interact Screen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".AppWebsite"
+            android:label="App barcode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".InteractedData" />
+        <activity android:name=".ChangeMusic"
+            android:label="Change Music"/>
+        <activity android:name=".TutorialActivity" />
+        <activity
+            android:name=".CustomerSupportActivity"
+            android:label="Customer Support"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SupportEmail" />
+        <activity android:name=".ActivitySplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

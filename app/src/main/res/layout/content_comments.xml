@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="msd.com.smartstreet.CommentsActivity"
+    tools:showIn="@layout/activity_comments"
+    android:background="#EEEEEE">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- TextView for the Reviews label -->
+  <!--  <TextView
+        android:id="@+id/tvHeading"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Reviews"
+        android:textColor="#FFFFFF" />-->
+
+
+    <!-- ListView for the Comments -->
+    <ListView
+        android:layout_marginTop="60dp"
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+    <!-- Add comment button -->
+    <at.markushi.ui.CircleButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="openEditorForNewComment"
+        android:src="@drawable/ic_plus"
+        app:cb_color="#009688"
+        app:cb_pressedRingWidth="8dp" />
+
+</RelativeLayout>

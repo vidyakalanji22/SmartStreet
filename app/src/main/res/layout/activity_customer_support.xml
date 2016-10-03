@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.shelly.finalproject.CustomerSupportActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="130dp"
+        android:text="408-679-0936"
+        android:id="@+id/call"
+        android:background="@drawable/buttongreen"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="#fefbfb"
+        android:drawablePadding="-160dp"
+        android:drawableLeft="@drawable/phone"
+        android:autoLink="phone"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="50dp"
+        android:text="Send Email"
+        android:id="@+id/button2"
+        android:background="@drawable/button"
+        android:layout_below="@+id/call"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="#fefbfb"
+        android:drawablePadding="-160dp"
+        android:drawableLeft="@drawable/email"/>
+
+
+</RelativeLayout>

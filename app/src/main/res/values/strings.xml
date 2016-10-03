@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Smart Street</string>
+    <!-- String values for the Settings and Rate Up for the Action Bar in hOme screen -->
+    <string name="action_settings">Sign in</string>
+    <string name="action_rateup">Rate Up</string>
+    <string name="title_activity_barcode">Smart Street</string>
+    <!-- text for the Smart Street app in the barcode activity page -->
+     <string name="smartstreet">Smart Street app helps you find ur nearby places,
+         take a photo or video, share it in social media.Click the scan button to know more about the smart circuit tree!.</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- For displaying message in maps activity -->
+    <string name="error_connect_to_services">Can\'t connect to Google Play services</string>
+    <!-- Location value in maps activity -->
+    <string name="hnt_et_location">Enter location</string>
+    <string name="map_info">Map info</string>
+    <string name="title_activity_camera">Camera Screen</string>
+    <string name="title_activity_audio">Audio Screen</string>
+    <string name="title_activity_share">Share Screen</string>
+    <!-- String value for Facebook app id -->
+    <string name="facebook_app_id">627465390744938</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_add_comments">Add Comments</string>
+    <string name="title_activity_comments">Comments Screen</string>
+    <string name="title_activity_editor">Comments Screen</string>
+    <!-- String value for Sign out button -->
+    <string name="action_logout">Sign out</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <!-- String value for My Profile button -->
+    <string name="action_userProfile">My Profile</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="progress_dialog_loading">Loading</string>
+    <string name="progress_dialog_creating_user_with_firebase">Creating user</string>
+    <string name="error_invalid_email_not_valid">Not valid</string>
+    <string name="error_cannot_be_empty">Username cant be empty</string>
+    <string name="log_message_auth_successful">success</string>
+    <string name="log_error_occurred">error</string>
+    <string name="error_email_taken">email exists</string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with firebase</string>
+    <string name="log_error_invalid_provider">invalid provider</string>
+    <string name="error_message_email_issue">email issue</string>
+    <string name="error_message_failed_sign_in_no_network">no network</string>
+
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="sign_up_button_label">Sign Up</string>
+    <string name="signup_error_message">Please make sure you enter an email address and password!</string>
+    <string name="signup_error_title">Error!</string>
+    <string name="signup_success">Account successfully created! You can now Login.</string>
+    <string name="login_error_message">Please make sure you enter an email address and password!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="login_button_label">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+    <string name="add_item">Add New Item</string>
+    <string name="Interact">Interact</string>
+    <string name="aboutus">About</string>
+    <string name="share">Share</string>
+    <string name="Maps">Maps</string>
+    <string name="camera">Camera</string>
+    <string name="barcode">Share the App!</string>
+    <string name="comment">Comment</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_confirmpassword">Confirm Password</string>
+    <string name="hint_mobileno">Mobile Number</string>
+    <string name="btn_link_to_login">Already have an account? Login</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="barcode_text">Scan the barcode to go to app website</string>
+    <string name="on_button">On</string>
+    <string name="off_button">Off</string>
+
+</resources>

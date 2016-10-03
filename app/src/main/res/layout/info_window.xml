@@ -1,0 +1,28 @@
+<!-- This activity is for the customized info wins=dow on the map -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- This ImageView is for the custom marker icon on the info window-->
+    <ImageView
+        android:id="@+id/imageViewMap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/map_info"
+        android:src="@drawable/ic_marker" />
+
+    <!-- This TextView represents the info window for displaying the address on the map -->
+    <TextView
+        android:id="@+id/tvLocality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/getDirections"/>
+
+</LinearLayout>

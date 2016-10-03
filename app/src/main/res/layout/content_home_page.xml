@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomePage"
+    android:background="#EEEEEE">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="About"
+        android:background="#EA5E3E"
+        android:id="@+id/aboutButton"
+        android:drawablePadding="-10dp"
+        android:drawableTop="@drawable/iconabout"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTest1"
+        android:layout_below="@+id/about"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="167dp"
+            android:layout_height="130dp"
+            android:text="Interact"
+            android:background="#009688"
+            android:id="@+id/interact"
+            android:drawablePadding="-10dp"
+            android:drawableTop="@drawable/interactwhite"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="167dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:text="Nearby"
+            android:background="#f39c12"
+            android:id="@+id/nearbyButton"
+            android:drawablePadding="-10dp"
+            android:drawableTop="@drawable/location"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTest2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayoutTest1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="167dp"
+            android:layout_height="130dp"
+            android:text="Photo"
+            android:id="@+id/cameraButton"
+            android:drawableTop="@drawable/cam"
+            android:background="#f39c12"
+            android:drawablePadding="-10dp"
+            android:layout_below="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="167dp"
+            android:layout_height="130dp"
+            android:text="Share"
+            android:id="@+id/shareButton"
+            android:background="#009688"
+            android:drawableTop="@drawable/shareicon"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="-10dp"
+            android:layout_alignTop="@+id/button3"
+            android:layout_toEndOf="@+id/button3"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_below="@+id/linearLayoutTest2"
+        android:layout_centerHorizontal="true"
+        android:text="Comment"
+        android:drawablePadding="-25dp"
+        android:drawableTop="@drawable/comments"
+        android:id="@+id/commentButton"
+        android:background="#EA5E3E"
+        android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
